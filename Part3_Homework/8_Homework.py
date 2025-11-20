@@ -19,3 +19,22 @@
 # Keep input() outside the functions.
 
 # Write your code here:
+def calculate_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+def display_report(score, grade):
+    print(f"Score: {score}")
+    print(f"Grade: {grade}")
+
+score = int(input("Enter your score: "))
+grade = calculate_grade(score)
+display_report(score, grade)
